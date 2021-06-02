@@ -18,7 +18,7 @@ TorrentSearchApi.enableProvider('Eztv');
 app.get('/', async (req, res)  => {
     try {
         const torrents = await TorrentSearchApi.search(
-            ['1337x','Torrentz2','Torrent9','ThePirateBay','KickassTorrents','Rarbg','TorrentProject','Yts','Limetorrents','Eztv'], ['720','hindi'], 'Movies', 50);
+            ['1337x','Torrentz2','Torrent9','ThePirateBay','KickassTorrents','Rarbg','TorrentProject','Yts','Limetorrents','Eztv'], ['720'], 'Porn', 50);
         res.send(torrents)
     } catch (error) {
         console.log(error);
